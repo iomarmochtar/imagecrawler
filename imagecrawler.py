@@ -45,7 +45,7 @@ class ImageCrawler(object):
         pisah = urlparse(url)
         headers = {
             'Host': pisah.netloc,
-            #'User-Agent': self.user_agent,
+            'User-Agent': self.user_agent,
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         }
         req = Request(url, headers=headers)
